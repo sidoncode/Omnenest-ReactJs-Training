@@ -3,4 +3,6 @@
 
 </br>
 
-### https://fakestoreapi.com/docs
+### Docs: https://fakestoreapi.com/docs
+
+### endpoint: getAllUser()

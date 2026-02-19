@@ -198,19 +198,7 @@ Create `src/hooks/useScrollPosition.js`:
 // src/hooks/useScrollPosition.js
 import { useState, useEffect } from 'react';
 
-export function useScrollPosition() {
-  const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup: remove listener when component unmounts
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return scrollY;
 }
 ```
 
@@ -222,37 +210,7 @@ Create `src/components/BackToTop.jsx`:
 // src/components/BackToTop.jsx
 import { useScrollPosition } from '../hooks/useScrollPosition';
 
-function BackToTop() {
-  const scrollY = useScrollPosition();
 
-  // Don't render the button until user scrolls past 300px
-  if (scrollY < 300) return null;
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  return (
-    <button
-      onClick={scrollToTop}
-      style={{
-        position: 'fixed',
-        bottom: '30px',
-        right: '30px',
-        width: '48px',
-        height: '48px',
-        borderRadius: '50%',
-        background: '#0066cc',
-        color: 'white',
-        border: 'none',
-        fontSize: '20px',
-        cursor: 'pointer',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
-        zIndex: 999
-      }}
-      title="Back to top"
-    >
-      ↑
     </button>
   );
 }
@@ -269,14 +227,6 @@ import BackToTop from './components/BackToTop'; // <-- ADD
 function App() {
   // ...existing code...
 
-  return (
-    <div style={{ minHeight: '100vh', background: '#f5f5f5' }}>
-      <Navbar onViewCart={handleViewCart} />
-
-      {/* ...existing views... */}
-
-      <BackToTop />  {/* <-- ADD at the bottom, outside all views */}
-    </div>
   );
 }
 ```
@@ -303,27 +253,6 @@ Create `src/hooks/useWindowSize.js`:
 // src/hooks/useWindowSize.js
 import { useState, useEffect } from 'react';
 
-export function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup on unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowSize;
 }
 ```
 
@@ -341,39 +270,7 @@ function ProductList({ onViewDetails }) {
   // Decide columns based on screen width
   const getGridColumns = () => {
     if (width < 480)  return '1fr';                          // Mobile
-    if (width < 768)  return 'repeat(2, 1fr)';              // Tablet
-    if (width < 1024) return 'repeat(3, 1fr)';              // Small desktop
-    return 'repeat(auto-fill, minmax(220px, 1fr))';         // Large desktop
-  };
-
-  // ...existing state and fetch logic stays the same...
-
-  return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      <h1>Product Store</h1>
-
-      {/* Optional: show current breakpoint during development */}
-      <p style={{ fontSize: '12px', color: '#999' }}>
-        Window width: {width}px
-      </p>
-
-      {/* Product Grid — now responsive via JS */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: getGridColumns(), // <-- dynamic columns
-        gap: '20px'
-      }}>
-        {products.map(product => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onViewDetails={onViewDetails}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+    
 
 export default ProductList;
 ```

@@ -19,3 +19,17 @@ const timer = useRef<NodeJS.Timeout | null>(null);
 timer.current = setTimeout(() => {
   // perform search
 }, 500);
+```
+
+</br>
+
+## Feature 2 — useWishlist
+
+const [wishlist, setWishlist] = useState<string[]>(() => {
+  const saved = localStorage.getItem('wishlist');
+  return saved ? JSON.parse(saved) : [];
+});
+
+useEffect(() => {
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+}, [wishlist]);

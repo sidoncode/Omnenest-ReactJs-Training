@@ -25,6 +25,8 @@ timer.current = setTimeout(() => {
 
 ## Feature 2 — useWishlist
 
+```tsx
+
 const [wishlist, setWishlist] = useState<string[]>(() => {
   const saved = localStorage.getItem('wishlist');
   return saved ? JSON.parse(saved) : [];
@@ -33,3 +35,4 @@ const [wishlist, setWishlist] = useState<string[]>(() => {
 useEffect(() => {
   localStorage.setItem('wishlist', JSON.stringify(wishlist));
 }, [wishlist]);
+```

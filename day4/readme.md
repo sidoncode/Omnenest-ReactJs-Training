@@ -139,39 +139,7 @@ function ProductCard({ product, onViewDetails }) {
     <div style={{ border: '1px solid #ddd', borderRadius: '8px',
                   padding: '15px', background: 'white' }}>
 
-      <img src={product.image} alt={product.title}
-           style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
-
-      <h3 style={{ fontSize: '14px' }}>{product.title}</h3>
-      <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#0066cc' }}>
-        ${product.price}
-      </p>
-
-      {/* Toggle Button */}
-      <button
-        onClick={toggleDesc}
-        style={{ padding: '6px 12px', marginBottom: '8px',
-                 background: '#f0f0f0', border: '1px solid #ddd',
-                 borderRadius: '4px', cursor: 'pointer', fontSize: '13px' }}
-      >
-        {showDesc ? '▲ Hide Description' : '▼ Show Description'}
-      </button>
-
-      {/* Conditionally show description */}
-      {showDesc && (
-        <p style={{ fontSize: '13px', color: '#555', lineHeight: '1.5' }}>
-          {product.description}
-        </p>
-      )}
-
-      <button onClick={() => onViewDetails(product.id)}
-              style={{ width: '100%', padding: '10px', marginTop: '8px',
-                       background: '#0066cc', color: 'white',
-                       border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
-        View Details
-      </button>
-    </div>
-  );
+ 
 }
 
 export default ProductCard;

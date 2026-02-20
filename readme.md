@@ -5,7 +5,7 @@
 | 17-Feb | Day2: reactJs: Form Validation, Dynamic Content Filtering, Spread operators, FrontEnd Filtering(Groww CaseStudy) | [Link](https://miro.com/app/board/uXjVG_FHgXU=/?share_link_id=842077525278) |
 | 18-Feb | Day3: reactJs: useEffect(), Api Arch, Filtering / Sorting / CustomHooks | [Link](https://miro.com/app/board/uXjVG-utRWs=/?share_link_id=521125754174) |
 | 19-Feb | Day4: reactJs: Advance Hooks and Custom Hooks | [Link](https://miro.com/app/board/uXjVG-Xfjkc=/?share_link_id=564116410358) |
-| 20-Feb | Day5: reactJs: Qna | TypeScript: Fundamentals | [Link](https://miro.com/app/board/uXjVG991WmE=/?share_link_id=144851743651) |
+| 20-Feb | Day5: reactJs: Qna -  TypeScript: Fundamentals | [Link](https://miro.com/app/board/uXjVG991WmE=/?share_link_id=144851743651) |
 
 
 

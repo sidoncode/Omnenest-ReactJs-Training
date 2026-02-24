@@ -1,20 +1,20 @@
-# React JS Sessions - OmneNest
+<img width="140" height="17" alt="image" src="https://github.com/user-attachments/assets/0c701e65-6743-4919-a9cf-856b92d8cf72" /># React JS Sessions - OmneNest
 
 
 # GitHub Collaborators
 
 | Name | Role | GitHub Profile |
 |------|------|----------------|
-| rockeykumarmuz | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
-| Adityaa112 | Collaborator | [github.com/Adityaa112](https://github.com/Adityaa112) |
-| Dhruv-Omnenest | Collaborator | [github.com/Dhruv-Omnenest](https://github.com/Dhruv-Omnenest) |
-| dsarthak0 | Collaborator | [github.com/dsarthak0](https://github.com/dsarthak0) |
-| ParthOmneNest | Collaborator | [github.com/ParthOmneNest](https://github.com/ParthOmneNest) |
-| rohit-gomase25 | Collaborator | [github.com/rohit-gomase25](https://github.com/rohit-gomase25) |
-| ruta-m | Collaborator | [github.com/ruta-m](https://github.com/ruta-m) |
-| Sampuran429Omnenest | Collaborator | [github.com/Sampuran429Omnenest](https://github.com/Sampuran429Omnenest) |
-| sanikasule | Collaborator | [github.com/sanikasule](https://github.com/sanikasule) |
-| tanya017 | Collaborator | [github.com/tanya017](https://github.com/tanya017) |
+| Rockey Kumar | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
+| Aditya Adawadkar  | Collaborator | [github.com/Adityaa112](https://github.com/Adityaa112) |
+| Dhruv Mehta | Collaborator | [github.com/Dhruv-Omnenest](https://github.com/Dhruv-Omnenest) |
+| Sarthak Dhanwate | Collaborator | [github.com/dsarthak0](https://github.com/dsarthak0) |
+| Parth Das | Collaborator | [github.com/ParthOmneNest](https://github.com/ParthOmneNest) |
+| Rohit Gomase | Collaborator | [github.com/rohit-gomase25](https://github.com/rohit-gomase25) |
+| Ruta Mangalampalli  | Collaborator | [github.com/ruta-m](https://github.com/ruta-m) |
+| Sampuran Udeshi | Collaborator | [github.com/Sampuran429Omnenest](https://github.com/Sampuran429Omnenest) |
+| Sanika Sule | Collaborator | [github.com/sanikasule](https://github.com/sanikasule) |
+| Tanya Verma | Collaborator | [github.com/tanya017](https://github.com/tanya017) |
 
 
 

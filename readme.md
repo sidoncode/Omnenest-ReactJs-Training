@@ -13,7 +13,7 @@
 | ruta-m | Collaborator | [github.com/ruta-m](https://github.com/ruta-m) |
 | Sampuran429Omnenest | Collaborator | [github.com/Sampuran429Omnenest](https://github.com/Sampuran429Omnenest) |
 | sanikasule | Collaborator | [github.com/sanikasule](https://github.com/sanikasule) |
-| __tanya017__ | — | [github.com/__tanya017__](https://github.com/__tanya017__) |
+| __tanya017__ | Collaborator | [github.com/__tanya017__](https://github.com/__tanya017__) |
 
 
 

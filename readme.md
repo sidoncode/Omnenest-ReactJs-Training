@@ -5,6 +5,7 @@
 
 | Name | Role | GitHub Profile |
 |------|------|----------------|
+| rockeykumarmuz | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
 | Adityaa112 | Collaborator | [github.com/Adityaa112](https://github.com/Adityaa112) |
 | Dhruv-Omnenest | Collaborator | [github.com/Dhruv-Omnenest](https://github.com/Dhruv-Omnenest) |
 | dsarthak0 | Collaborator | [github.com/dsarthak0](https://github.com/dsarthak0) |
@@ -14,7 +15,7 @@
 | Sampuran429Omnenest | Collaborator | [github.com/Sampuran429Omnenest](https://github.com/Sampuran429Omnenest) |
 | sanikasule | Collaborator | [github.com/sanikasule](https://github.com/sanikasule) |
 | tanya017 | Collaborator | [github.com/tanya017](https://github.com/tanya017) |
-| rockeykumarmuz | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
+
 
 
 

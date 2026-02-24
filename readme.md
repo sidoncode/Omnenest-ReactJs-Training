@@ -14,6 +14,7 @@
 | Sampuran429Omnenest | Collaborator | [github.com/Sampuran429Omnenest](https://github.com/Sampuran429Omnenest) |
 | sanikasule | Collaborator | [github.com/sanikasule](https://github.com/sanikasule) |
 | tanya017 | Collaborator | [github.com/tanya017](https://github.com/tanya017) |
+| rockeykumarmuz | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
 
 
 

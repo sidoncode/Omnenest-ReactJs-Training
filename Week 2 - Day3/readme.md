@@ -14,7 +14,7 @@
 
 **Files to create/update:** `src/components/StockComparePanel.tsx`, `src/components/StockCard.tsx`, `src/App.tsx`
 
-The `compareList`, `toggleCompare`, and `clearCompare` fields were already added to `useStockStore` in Part 1. They are not yet wired to any UI.
+**HINT::** Add `compareList`, `toggleCompare`, and `clearCompare` fields to `useStockStore`, Then in Next Step you can Wire them to UI.
 
 **Your task:**
 

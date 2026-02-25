@@ -7,6 +7,12 @@
 **Module:** 3 — Global State with Zustand  
 **Prerequisite:** `npm install zustand`
 
+---
+
+## Feature1: Comparison Table <> Position Table
+
+## Next Day: 1) Store code (re-code)
+
 
 ---
 

@@ -7,103 +7,10 @@
 **Module:** 3 — Global State with Zustand  
 **Prerequisite:** `npm install zustand`
 
----
-
-## Part 1 — useStockStore
-
-**File to create:** `src/stores/useStockStore.ts`
-
-Currently, `App.tsx` owns `searchQuery`, `sectorFilter`, and `selectedStock` as separate `useState` hooks. The `filteredStocks` list is computed inline inside the component body. All of this is then manually passed down as props to `LiveQuotesFeature`, which passes `onSearch` and `onFilterChange` further down to `SearchBar`.
-
-**Your task:**
-
-- Create a Zustand store that holds `searchQuery`, `sectorFilter`, `selectedStock`, `filteredStocks` (derived), and `compareList` (for the comparison feature in Part 5)
-- Move the `filteredStocks` filter logic out of `App.tsx` and into the store — it should re-run automatically whenever `searchQuery` or `sectorFilter` changes
-- Update `App.tsx` to remove the three `useState` declarations and the inline filter computation
-- Update `LiveQuotesFeature.tsx` to read directly from the store — it should have **zero props**
-- `SearchBar.tsx` and `StockCard.tsx` must **not** be changed
-
-**Acceptance criteria:**
-
-- `App.tsx` contains no `useState` for search, filter, or selected stock
-- `<LiveQuotesFeature />` is rendered in `App.tsx` with no props
-- Typing in the search box still filters the stock list in real time
-- Selecting a sector in the dropdown still filters by sector
 
 ---
 
-## Part 2 — useTradeStore
-
-**File to create:** `src/stores/useTradeStore.ts`
-
-Currently, `tradeHistory` lives in `App.tsx` as a `useState<Trade[]>`. The `handleNewTrade` function also lives in `App.tsx` — it generates the `id` and `date` fields and prepends the new trade to the list. Both the list and the function are passed down as props to `TradeFeature`, which passes `onSubmitTrade` further down to `TradeForm`.
-
-**Your task:**
-
-- Create a Zustand store that holds `tradeHistory` and an `addTrade` action
-- The `addTrade` action must accept only `Omit<Trade, 'id' | 'date'>` — the store generates `id` and `date` internally
-- Update `App.tsx` to remove the `tradeHistory` `useState` and the `handleNewTrade` function
-- Update `TradeFeature.tsx` to read from both `useTradeStore` (for trade data) and `useStockStore` (for `selectedStock` to pre-fill the form) — it should have **zero props**
-- `TradeForm.tsx` must **not** be changed
-
-**Acceptance criteria:**
-
-- `App.tsx` contains no `useState` for trade history and no `handleNewTrade` function
-- `<TradeFeature />` is rendered in `App.tsx` with no props
-- Submitting a trade via the form adds it to the top of the Trade History table
-- The trade form still pre-fills when a StockCard is clicked
-
----
-
-## Part 3 — usePortfolioStore
-
-**File to create:** `src/stores/usePortfolioStore.ts`
-
-Currently, `PortfolioSummary.tsx` contains a local `useState` with five fields (`holdings`, `totalValue`, `gainLoss`, `isLoading`, `error`). A `useEffect` with `setTimeout` runs the portfolio calculation and calls `setPortfolio`. The component also receives `availableStocks` as a prop passed from `App.tsx` through `PortfolioFeature`.
-
-**Your task:**
-
-- Create a Zustand store that holds the five portfolio fields and a `loadPortfolio` action
-- The `loadPortfolio` action must replicate the existing `setTimeout` calculation logic — keep the same 800ms delay
-- Update `PortfolioSummary.tsx` to remove the `useState` and `useEffect` blocks — use a `useEffect` that calls the store action instead, and read `allStocks` from `useStockStore` directly
-- Update `PortfolioFeature.tsx` to remove the `availableStocks` prop — it should have **zero props**
-- Update `App.tsx` to remove the `availableStocks` prop from `<PortfolioFeature />`
-- The local `selectedSector` dropdown state in `PortfolioSummary.tsx` must **stay as local `useState`** — it does not need to be shared
-
-**Acceptance criteria:**
-
-- `PortfolioSummary.tsx` has no `useState` for portfolio data and no `useEffect` with `setTimeout`
-- `<PortfolioFeature />` is rendered in `App.tsx` with no props
-- The loading state still shows while the calculation runs
-- The portfolio summary still displays correctly after loading
-
----
-
-## Part 4 — usePositionsStore
-
-**File to create:** `src/stores/usePositionsStore.ts`
-
-Currently, `PositionFeature.tsx` is read-only — it receives `positionData` as a prop from `App.tsx` and only displays it. There is no way to add or remove positions from the UI.
-
-**Your task:**
-
-- Create a Zustand store that holds `positions` and provides three actions: `addPosition`, `removePosition`, and `updatePosition`
-- The `addPosition` action must handle the case where a position for the same stock symbol already exists — instead of creating a duplicate row, it should merge the quantities and recalculate the average price using a weighted average
-- The `removePosition` action must remove a position by `id` — never mutate the existing array
-- The `updatePosition` action must accept a partial update — only the provided fields should change
-- Update `PositionFeature.tsx` to remove the `positionData` prop and read from the store — add a **Remove** button column to the `DataTable` that calls `removePosition`
-- Update `App.tsx` to remove the `positionData` prop from `<PositionsFeature />`
-
-**Acceptance criteria:**
-
-- `<PositionsFeature />` is rendered in `App.tsx` with no props
-- Each row in the Positions table has a Remove button
-- Clicking Remove instantly deletes that row from the table
-- Adding a position for a stock that already exists merges it rather than duplicating
-
----
-
-## Part 5 — Stock Comparison Feature
+## Part 1 — Stock Comparison Feature
 
 **Files to create/update:** `src/components/StockComparePanel.tsx`, `src/components/StockCard.tsx`, `src/App.tsx`
 
@@ -132,7 +39,7 @@ The `compareList`, `toggleCompare`, and `clearCompare` fields were already added
 
 ---
 
-## Part 6 — DevTools Integration
+## Part 2 — DevTools Integration
 
 **Files to update:** All four store files
 
@@ -151,6 +58,100 @@ Zustand ships with a `devtools` middleware that integrates with the Redux DevToo
 - Every state change triggered by a user action (typing, clicking, submitting) appears as a named entry in the DevTools action log
 - Time-travel debugging works — stepping back through actions restores the correct state
 - No `npm install` is required — `devtools` ships with Zustand
+
+---
+
+## Part 3 — useStockStore
+
+**File to create:** `src/stores/useStockStore.ts`
+
+Currently, `App.tsx` owns `searchQuery`, `sectorFilter`, and `selectedStock` as separate `useState` hooks. The `filteredStocks` list is computed inline inside the component body. All of this is then manually passed down as props to `LiveQuotesFeature`, which passes `onSearch` and `onFilterChange` further down to `SearchBar`.
+
+**Your task:**
+
+- Create a Zustand store that holds `searchQuery`, `sectorFilter`, `selectedStock`, `filteredStocks` (derived), and `compareList` (for the comparison feature in Part 5)
+- Move the `filteredStocks` filter logic out of `App.tsx` and into the store — it should re-run automatically whenever `searchQuery` or `sectorFilter` changes
+- Update `App.tsx` to remove the three `useState` declarations and the inline filter computation
+- Update `LiveQuotesFeature.tsx` to read directly from the store — it should have **zero props**
+- `SearchBar.tsx` and `StockCard.tsx` must **not** be changed
+
+**Acceptance criteria:**
+
+- `App.tsx` contains no `useState` for search, filter, or selected stock
+- `<LiveQuotesFeature />` is rendered in `App.tsx` with no props
+- Typing in the search box still filters the stock list in real time
+- Selecting a sector in the dropdown still filters by sector
+
+---
+
+## Part 4 — useTradeStore
+
+**File to create:** `src/stores/useTradeStore.ts`
+
+Currently, `tradeHistory` lives in `App.tsx` as a `useState<Trade[]>`. The `handleNewTrade` function also lives in `App.tsx` — it generates the `id` and `date` fields and prepends the new trade to the list. Both the list and the function are passed down as props to `TradeFeature`, which passes `onSubmitTrade` further down to `TradeForm`.
+
+**Your task:**
+
+- Create a Zustand store that holds `tradeHistory` and an `addTrade` action
+- The `addTrade` action must accept only `Omit<Trade, 'id' | 'date'>` — the store generates `id` and `date` internally
+- Update `App.tsx` to remove the `tradeHistory` `useState` and the `handleNewTrade` function
+- Update `TradeFeature.tsx` to read from both `useTradeStore` (for trade data) and `useStockStore` (for `selectedStock` to pre-fill the form) — it should have **zero props**
+- `TradeForm.tsx` must **not** be changed
+
+**Acceptance criteria:**
+
+- `App.tsx` contains no `useState` for trade history and no `handleNewTrade` function
+- `<TradeFeature />` is rendered in `App.tsx` with no props
+- Submitting a trade via the form adds it to the top of the Trade History table
+- The trade form still pre-fills when a StockCard is clicked
+
+---
+
+## Part 5 — usePortfolioStore
+
+**File to create:** `src/stores/usePortfolioStore.ts`
+
+Currently, `PortfolioSummary.tsx` contains a local `useState` with five fields (`holdings`, `totalValue`, `gainLoss`, `isLoading`, `error`). A `useEffect` with `setTimeout` runs the portfolio calculation and calls `setPortfolio`. The component also receives `availableStocks` as a prop passed from `App.tsx` through `PortfolioFeature`.
+
+**Your task:**
+
+- Create a Zustand store that holds the five portfolio fields and a `loadPortfolio` action
+- The `loadPortfolio` action must replicate the existing `setTimeout` calculation logic — keep the same 800ms delay
+- Update `PortfolioSummary.tsx` to remove the `useState` and `useEffect` blocks — use a `useEffect` that calls the store action instead, and read `allStocks` from `useStockStore` directly
+- Update `PortfolioFeature.tsx` to remove the `availableStocks` prop — it should have **zero props**
+- Update `App.tsx` to remove the `availableStocks` prop from `<PortfolioFeature />`
+- The local `selectedSector` dropdown state in `PortfolioSummary.tsx` must **stay as local `useState`** — it does not need to be shared
+
+**Acceptance criteria:**
+
+- `PortfolioSummary.tsx` has no `useState` for portfolio data and no `useEffect` with `setTimeout`
+- `<PortfolioFeature />` is rendered in `App.tsx` with no props
+- The loading state still shows while the calculation runs
+- The portfolio summary still displays correctly after loading
+
+---
+
+## Part 6 — usePositionsStore
+
+**File to create:** `src/stores/usePositionsStore.ts`
+
+Currently, `PositionFeature.tsx` is read-only — it receives `positionData` as a prop from `App.tsx` and only displays it. There is no way to add or remove positions from the UI.
+
+**Your task:**
+
+- Create a Zustand store that holds `positions` and provides three actions: `addPosition`, `removePosition`, and `updatePosition`
+- The `addPosition` action must handle the case where a position for the same stock symbol already exists — instead of creating a duplicate row, it should merge the quantities and recalculate the average price using a weighted average
+- The `removePosition` action must remove a position by `id` — never mutate the existing array
+- The `updatePosition` action must accept a partial update — only the provided fields should change
+- Update `PositionFeature.tsx` to remove the `positionData` prop and read from the store — add a **Remove** button column to the `DataTable` that calls `removePosition`
+- Update `App.tsx` to remove the `positionData` prop from `<PositionsFeature />`
+
+**Acceptance criteria:**
+
+- `<PositionsFeature />` is rendered in `App.tsx` with no props
+- Each row in the Positions table has a Remove button
+- Clicking Remove instantly deletes that row from the table
+- Adding a position for a stock that already exists merges it rather than duplicating
 
 ---
 

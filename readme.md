@@ -29,6 +29,6 @@
 | Week 2 | 23-Feb | Day 1: ReactJS — TypeScript, Omit,pick,Partial, with Project(Groww915) | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
 | Week 2 | 24-Feb | Day 2: ReactJS — Pagination, Infinite Scrolling, Virtualisation, Lazy Loading, Suspense, Error Bounding & Code Spliting | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
 | Week 2 | 25-Feb | Day 3: Zustand Fundamentals + Handson + Assingments | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
-| Week 2 | 26-Feb | Day 4:  | [Link]() |
+| Week 2 | 26-Feb | Day 4: Zustand - Advance: Handson + Groww915 Mock Tickets| [Link]() |
 
 

@@ -2,9 +2,9 @@
 
 # GitHub Collaborators
 
-| Name | Role | GitHub Profile |
-|------|------|----------------|
-| Rockey Kumar | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) |
+| Name | Role | GitHub Profile |  Profile |
+|------|------|----------------||----------------|
+| Rockey Kumar | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) | https://adityaa112.github.io/week2day1/  |
 | Aditya Adawadkar  | Collaborator | [github.com/Adityaa112](https://github.com/Adityaa112) |
 | Dhruv Mehta | Collaborator | [github.com/Dhruv-Omnenest](https://github.com/Dhruv-Omnenest) |
 | Sarthak Dhanwate | Collaborator | [github.com/dsarthak0](https://github.com/dsarthak0) |

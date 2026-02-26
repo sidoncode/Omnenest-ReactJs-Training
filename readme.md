@@ -1,3 +1,118 @@
+# OmneNest Project:
+
+# Trade, Position & Holdings — Client View Guide
+
+> A sequential breakdown of the three core tables in the portfolio dashboard, and what each one means to the client.
+
+---
+
+## The Sequential Flow
+
+```
+Client places a trade
+       ↓
+  TRADE HISTORY  →  records every BUY/SELL event
+       ↓
+   POSITIONS     →  shows net open shares + live P&L
+       ↓
+   HOLDINGS      →  shows total invested $ vs current $ value
+```
+
+**In short:** Trades are the events → Positions show the current state → Holdings show the financial outcome.
+
+---
+
+## 1. Trade History — *"What did I do?"*
+
+This is the **action log**. Every time the client places a BUY or SELL order, a record is added here.
+
+### Columns
+
+| Column | Description |
+|--------|-------------|
+| Symbol | Stock ticker (e.g. AAPL, TSLA) |
+| Type | `BUY` (green) or `SELL` (red) |
+| Qty | Number of shares traded |
+| Price | Price per share at time of trade |
+| Date | Date the trade was executed |
+
+### Client Usecase
+
+> *"I want to see every transaction I've ever made — when I bought AAPL, when I sold TSLA, at what price, and how many shares."*
+
+This is essentially an **audit trail** of all activity. It answers the question: *"What actions have I taken?"*
+
+### Key Behaviour
+- Infinite scroll — loads 10 trades at a time as the client scrolls down.
+- Shows a running count: `X of Y shown`.
+- Includes a **Place a Trade** form below the history table.
+
+---
+
+## 2. Positions — *"What do I currently own and how is it doing today?"*
+
+This is the **live snapshot**. It aggregates all trades into a net open position per stock and shows real-time P&L.
+
+### Columns
+
+| Column | Description |
+|--------|-------------|
+| Symbol | Stock ticker |
+| Qty | Net shares currently held |
+| Average Price | Weighted average buy price |
+| Last Traded Price (LTP) | Current market price |
+| P&L ($) | Profit or Loss in dollar terms |
+| P&L (%) | Profit or Loss as a percentage |
+
+### Client Usecase
+
+> *"Right now, how many shares of NVDA do I hold? What did I pay on average, and what is it worth at this moment? Am I up or down?"*
+
+This is the **intraday / short-term view**. P&L values are colour-coded: green for profit, red for loss. It answers: *"How is my portfolio performing right now?"*
+
+### Key Behaviour
+- Infinite scroll — loads 10 positions at a time.
+- Shows a running count: `X of Y shown`.
+- P&L and P&L% both render with `+` prefix for gains and a red colour for losses.
+
+---
+
+## 3. Holdings — *"What is my long-term invested value vs current value?"*
+
+This is the **portfolio health view**. It focuses on the total money invested versus what that investment is worth today.
+
+### Columns
+
+| Column | Description |
+|--------|-------------|
+| Symbol | Stock ticker |
+| Qty | Shares held |
+| Invested Value | Total cost basis (`qty × avg price`) |
+| Current Value | Today's market value (`qty × LTP`) |
+| Total Return ($) | `Current Value − Invested Value` |
+
+### Client Usecase
+
+> *"I put $1,750 into AAPL. What is it worth today? Have I made money overall?"*
+
+Unlike Positions (which shows per-share price and LTP), Holdings shows the **big-picture dollar amounts**, making it easier to understand wealth accumulation over time. It answers: *"How has my overall investment performed?"*
+
+### Key Behaviour
+- Total Return is displayed in green (`+`) for gains and red for losses.
+- Invested Value and Current Value are formatted with `$` and locale-aware number formatting.
+
+---
+
+## Summary Comparison
+
+| | Trade History | Positions | Holdings |
+|---|---|---|---|
+| **Purpose** | Audit log of all activity | Live snapshot of open positions | Long-term value comparison |
+| **Time Focus** | Past events | Present state | Overall investment outcome |
+| **Key Question** | What did I do? | What do I own right now? | How much have I made/lost overall? |
+| **P&L shown?** | ❌ | ✅ ($ and %) | ✅ (Total Return $) |
+| **Price shown?** | Trade price | Avg Price + LTP | Invested $ + Current $ |
+| **Scroll** | Infinite (10/page) | Infinite (10/page) | Standard table |
 
 
 # GitHub Collaborators

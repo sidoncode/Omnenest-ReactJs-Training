@@ -3,8 +3,8 @@
 # GitHub Collaborators
 
 | Name | Role | GitHub Profile | Prod URL |
-|------|------|----------------|----------|
-| Rockey Kumar | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) | |
+|------|------|----------------|----------| 
+| Rockey Kumar | Collaborator | [github.com/rockeykumarmuz](https://github.com/rockeykumarmuz) | https://rockeykumarmuz.github.io/stock-market-project-week-2/ |
 | Aditya Adawadkar | Collaborator | [github.com/Adityaa112](https://github.com/Adityaa112) | [adityaa112.github.io/week2day1](https://adityaa112.github.io/week2day1/) |
 | Dhruv Mehta | Collaborator | [github.com/Dhruv-Omnenest](https://github.com/Dhruv-Omnenest) | [dhruv-omnenest.github.io/Week2](https://dhruv-omnenest.github.io/Week2/) |
 | Sarthak Dhanwate | Collaborator | [github.com/dsarthak0](https://github.com/dsarthak0) | [dsarthak0.github.io/week2-sarthak](https://dsarthak0.github.io/week2-sarthak/) |

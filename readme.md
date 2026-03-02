@@ -34,6 +34,7 @@
 | Week 2 | 25-Feb | Day 3: Zustand Fundamentals + Handson + Assingments | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
 | Week 2 | 26-Feb | Day 4: Zustand - Advance: Handson + Groww915 Mock Tickets| [Link]() |
 | Week 2 | 27-Feb | Day 5: Tailwind + Groww915 Mock Tickets| [Link]() |
+| Week 3 | 2nd-March | Day 1: Standard Production Grade Guidelines + WebSocket + HeartBeat + Grow915 Project | [Link]() |
 
 
 

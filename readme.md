@@ -35,6 +35,7 @@
 | Week 2 | 26-Feb | Day 4: Zustand - Advance: Handson + Groww915 Mock Tickets| [Link]() |
 | Week 2 | 27-Feb | Day 5: Tailwind + Groww915 Mock Tickets| [Link]() |
 | Week 3 | 2nd-March | Day 1: Standard Production Grade Guidelines + WebSocket + HeartBeat + Grow915 Project | [Link]() |
+| Week 3 | 4th-March | Day 2: Latency Handling, Data Noramalization, WebWorkers, Parser and Reactjs Performance Optimization | [Link]() |
 
 
 

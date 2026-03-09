@@ -36,6 +36,10 @@
 | Week 2 | 27-Feb | Day 5: Tailwind + Groww915 Mock Tickets| [Link]() |
 | Week 3 | 2nd-March | Day 1: Standard Production Grade Guidelines + WebSocket + HeartBeat + Grow915 Project | [Link]() |
 | Week 3 | 4th-March | Day 2: Latency Handling, Data Noramalization, WebWorkers, Parser and Reactjs Performance Optimization | [Link]() |
+| Week 3 | 5th-March | Day 3: NVantage API Implementation | [Link]() |
+| Week 3 | 6th-March | Day 4: NVantage API Implementation | [Link]() |
+| Week 4 | 9th-March | Day 1: NVantage API Implementation ( Revisite of Concepts) | [Link]() |
+| Week 4 | 10th-March | Day 2: Market LIVE WebSocket Implementation  | [Link]() |
 
 
 

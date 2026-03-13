@@ -22,24 +22,31 @@
 
 # React JS Sessions - Whiteboards
 
+# OmneNEST — ReactJS Training Program
+
+## 📅 Training Schedule
+
 | Week | Date | Session / Topic | Link |
-|------|------|-----------------|------|
-| Week 1 | 16-Feb | Day 1: ReactJS — Fundamentals, Components, Props, Router-Dom, useState() - Mini Project | [Link](https://miro.com/app/board/uXjVG_iQp9U=/?share_link_id=913282371338) |
-| Week 1 | 17-Feb | Day 2: ReactJS — Form Validation, Dynamic Content Filtering, Spread Operators, FrontEnd Filtering (Groww CaseStudy) - Mini Project | [Link](https://miro.com/app/board/uXjVG_FHgXU=/?share_link_id=842077525278) |
-| Week 1 | 18-Feb | Day 3: ReactJS — useEffect(), API Architecture, Filtering / Sorting / Custom Hooks - Mini Project | [Link](https://miro.com/app/board/uXjVG-utRWs=/?share_link_id=521125754174) |
-| Week 1 | 19-Feb | Day 4: ReactJS — Advanced Hooks and Custom Hooks - Mini Project | [Link](https://miro.com/app/board/uXjVG-Xfjkc=/?share_link_id=564116410358) |
-| Week 1 | 20-Feb | Day 5: ReactJS — Q&A / TypeScript: Fundamentals - Mini Project | [Link](https://miro.com/app/board/uXjVG991WmE=/?share_link_id=144851743651) |
-| Week 2 | 23-Feb | Day 1: ReactJS — TypeScript, Omit,pick,Partial, with Project(Groww915) | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
-| Week 2 | 24-Feb | Day 2: ReactJS — Pagination, Infinite Scrolling, Virtualisation, Lazy Loading, Suspense, Error Bounding & Code Spliting | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
-| Week 2 | 25-Feb | Day 3: Zustand Fundamentals + Handson + Assingments | [Link](https://miro.com/app/board/uXjVG8BFyZ8=/?share_link_id=860521862202) |
-| Week 2 | 26-Feb | Day 4: Zustand - Advance: Handson + Groww915 Mock Tickets| [Link]() |
-| Week 2 | 27-Feb | Day 5: Tailwind + Groww915 Mock Tickets| [Link]() |
-| Week 3 | 2nd-March | Day 1: Standard Production Grade Guidelines + WebSocket + HeartBeat + Grow915 Project | [Link]() |
-| Week 3 | 4th-March | Day 2: Latency Handling, Data Noramalization, WebWorkers, Parser and Reactjs Performance Optimization | [Link]() |
-| Week 3 | 5th-March | Day 3: NVantage API Implementation | [Link]() |
-| Week 3 | 6th-March | Day 4: NVantage API Implementation | [Link]() |
-| Week 4 | 9th-March | Day 1: NVantage API Implementation ( Revisite of Concepts) | [Link]() |
-| Week 4 | 10th-March | Day 2: Market LIVE WebSocket Implementation  | [Link]() |
+|------|------|----------------|------|
+| Week 1 | 16-Feb | Day 1: ReactJS — Fundamentals, Components, Props, Router-Dom, useState() - Mini Project | __Link__ |
+| Week 1 | 17-Feb | Day 2: ReactJS — Form Validation, Dynamic Content Filtering, Spread Operators, FrontEnd Filtering (Groww CaseStudy) - Mini Project | __Link__ |
+| Week 1 | 18-Feb | Day 3: ReactJS — useEffect(), API Architecture, Filtering / Sorting / Custom Hooks - Mini Project | __Link__ |
+| Week 1 | 19-Feb | Day 4: ReactJS — Advanced Hooks and Custom Hooks - Mini Project | __Link__ |
+| Week 1 | 20-Feb | Day 5: ReactJS — Q&A / TypeScript: Fundamentals - Mini Project | __Link__ |
+| Week 2 | 23-Feb | Day 1: ReactJS — TypeScript, Omit, Pick, Partial, with Project (Groww915) | __Link__ |
+| Week 2 | 24-Feb | Day 2: ReactJS — Pagination, Infinite Scrolling, Virtualisation, Lazy Loading, Suspense, Error Bounding & Code Splitting | __Link__ |
+| Week 2 | 25-Feb | Day 3: Zustand Fundamentals + Handson + Assignments | __Link__ |
+| Week 2 | 26-Feb | Day 4: Zustand - Advance: Handson + Groww915 Mock Tickets | __Link__ |
+| Week 2 | 27-Feb | Day 5: Tailwind + Groww915 Mock Tickets | __Link__ |
+| Week 3 | 2-March | Day 1: Standard Production Grade Guidelines + WebSocket + HeartBeat + Groww915 Project | __Link__ |
+| Week 3 | 4-March | Day 2: Latency Handling, Data Normalization, WebWorkers, Parser and ReactJS Performance Optimization | __Link__ |
+| Week 3 | 5-March | Day 3: NVantage API Implementation — Concepts, HandShake, Auth, OTP, MarketStatus, Dashboard Config | __Link__ |
+| Week 3 | 6-March | Day 4: NVantage API Integration (API 6–10) + WebSocket Implementation in Groww915 | __Link__ |
+| Week 4 | 9-March | Day 1: Code Reviews + WebSocket Integration Feedback + Reconnection Strategies + Jest Introduction & Demo | __Link__ |
+| Week 4 | 10-March | Day 2: Jest Advanced + SonarQube Integration + SonarQube with CI/CD Pipeline | __Link__ |
+| Week 4 | 11-March | Day 3: Groww915 Mock POC Tickets — Full Day Implementation | __Link__ |
+| Week 4 | 12-March | Day 4: Code Reviews + Groww915 Mock POC Tickets | __Link__ |
+| Week 4 | 13-March | Day 5: Revision Topics + Final Mock POC Ticket Work | __Link__ |
 
 
 
